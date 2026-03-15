@@ -1,0 +1,1508 @@
+:root {
+    --azul: #0B3C5D;
+    --azul-claro: #1E5F8C;
+    --gris-claro: #F4F6F8;
+    --texto: #1D2731;
+}
+
+body{
+
+margin:0;
+
+font-family:'Segoe UI',sans-serif;
+
+background-image:url("assets/fondo click contenidos.jpeg");
+
+background-size:cover;
+
+background-attachment:fixed;
+
+color:#1D2731;
+
+}
+
+.header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:20px 50px;
+
+background:rgba(255,255,255,0.85);
+
+backdrop-filter:blur(6px);
+
+position:sticky;
+
+top:0;
+
+z-index:1000;
+
+border-bottom:1px solid rgba(0,0,0,0.05);
+
+}
+
+.logo img{
+
+height:90px;
+
+transition:0.3s;
+
+}
+
+.logo img:hover{
+
+transform:scale(1.05);
+
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: var(--texto);
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: var(--azul);
+}
+
+.icono-social {
+    height: 22px;
+    vertical-align: middle;
+}
+
+/*NUEVO HERO*/
+.hero{
+
+height:90vh;
+
+background:url("assets/hero-bg.jpg") center/cover no-repeat;
+
+position:relative;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+}
+
+/* Capa oscura encima de la imagen */
+.hero-overlay{
+
+width:100%;
+height:100%;
+
+background:rgba(11,60,93,0.65);
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+/* Texto */
+.hero-content {
+    color: white;
+    max-width: 700px;
+}
+
+.hero-content h1{
+
+font-size:3.5rem;
+
+margin-bottom:20px;
+
+letter-spacing:1px;
+
+font-weight:700;
+
+}
+
+.hero-content p{
+
+font-size:1.3rem;
+
+margin-bottom:35px;
+
+opacity:0.9;
+
+}
+.nosotros{
+
+padding:80px 20px;
+
+text-align:center;
+
+background:white;
+
+}
+
+.nosotros h2{
+
+font-size:32px;
+
+margin-bottom:20px;
+
+}
+
+.nosotros p{
+
+max-width:700px;
+
+margin:auto;
+
+font-size:18px;
+
+line-height:1.6;
+
+color:#555;
+
+}
+.hero-nosotros{
+
+height:400px;
+
+background:url("assets/hero-bg.jpeg") center/cover no-repeat;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+color:white;
+
+font-size:40px;
+
+font-weight:bold;
+
+text-shadow:0 4px 15px rgba(0,0,0,0.5);
+
+}
+.nosotros-contenido{
+
+max-width:900px;
+
+margin:auto;
+
+padding:60px 20px;
+
+text-align:center;
+
+}
+
+.foto-equipo{
+
+width:100%;
+
+max-width:600px;
+
+border-radius:10px;
+
+margin-bottom:30px;
+
+}
+
+/* SERVICIOS */
+.servicios {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.servicios-grid {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.servicios-grid div {
+    max-width: 250px;
+}
+
+.material-symbols-outlined {
+    font-size: 40px;
+    color: var(--azul);
+}
+
+/* COMO FUNCIONA */
+.como-funciona {
+    background-color: var(--gris-claro);
+    padding: 70px 20px;
+    text-align: center;
+}
+
+/* CONTACTO */
+.contacto {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.contacto-links a {
+    display: inline-block;
+    margin: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--azul);
+}
+
+.contacto-links a:hover {
+    color: var(--azul-claro);
+}
+
+footer {
+    background-color: var(--gris-claro);
+    padding: 20px;
+    text-align: center;
+}
+.icono-instagram svg {
+    width: 22px;
+    height: 22px;
+    color: #0B3C5D; /* Azul marino */
+    vertical-align: middle;
+    transition: 0.3s;
+}
+
+.icono-instagram svg:hover {
+    color: #1E5F8C; /* Azul más claro al pasar mouse */
+}
+.instagram-svg {
+    width: 22px;
+    height: 22px;
+    fill: none;
+    stroke: #0B3C5D;  /* Azul marino */
+    stroke-width: 1.8;
+    transition: 0.3s;
+    vertical-align: middle;
+}
+
+.icono-instagram:hover .instagram-svg {
+    stroke: #1E5F8C; /* Azul más claro al pasar mouse */
+}
+
+/* este apartado es para agregar las tarjetas de como funciona */
+
+/* COMO FUNCIONA PROFESIONAL */
+
+.como-funciona {
+    padding: 100px 40px;
+    text-align: center;
+    background-color: #F4F6F8;
+}
+
+.como-funciona h2 {
+    color: #0B3C5D;
+    margin-bottom: 60px;
+    font-size: 2.2rem;
+}
+
+.pasos-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.paso {
+    background-color: white;
+    padding: 35px 25px;
+    border-radius: 18px;
+    width: 260px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    transition: 0.3s ease;
+}
+
+.paso:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.12);
+}
+
+.numero {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0B3C5D;
+    margin-bottom: 15px;
+}
+
+.paso h3 {
+    margin-bottom: 10px;
+    color: #1D2731;
+}
+
+.paso p {
+    font-size: 0.9rem;
+    color: #555;
+}
+/* para que en celular no se rompa*/ 
+@media (max-width: 768px) {
+    .pasos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*agregamos iconos de whatsapp y mail*/
+
+.contacto-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.contacto-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #0B3C5D;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.contacto-item:hover {
+    color: #1E5F8C;
+}
+
+.icono-social {
+    width: 22px;
+    height: 22px;
+    fill: #0B3C5D;
+}
+.btn-eventos{
+
+display:inline-block;
+
+padding:14px 30px;
+
+background:#0B3C5D;
+
+color:white;
+
+text-decoration:none;
+
+font-weight:600;
+
+border-radius:10px;
+
+transition:0.25s;
+
+}
+
+.btn-eventos:hover{
+
+background:#1E5F8C;
+
+transform:translateY(-2px);
+
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+
+}
+
+/*agregando la parte de eventos*/ 
+
+h1{
+
+text-align:center;
+
+margin-top:40px;
+
+font-size:32px;
+
+letter-spacing:1px;
+
+}
+
+.eventos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 40px;
+}
+
+.evento-card{
+
+position:relative;
+
+background:white;
+
+border-radius:18px;
+
+padding:40px;
+
+text-align:center;
+
+box-shadow:0 8px 30px rgba(0,0,0,0.15);
+
+overflow:hidden;
+
+}
+.evento-card::before{
+
+content:"";
+
+position:absolute;
+
+top:50%;
+
+left:50%;
+
+width:220px;
+
+height:220px;
+
+background:url("../assets/escudos/regatas.png") no-repeat center;
+
+background-size:contain;
+
+transform:translate(-50%,-50%);
+
+opacity:0.08;
+
+pointer-events:none;
+
+}
+
+.btn-evento {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #0B3C5D;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Agregamos los contadores de Fotos seleccionadas*/
+
+.grid-fotos img {
+    border: 3px solid transparent;
+}
+
+.grid-fotos img.seleccionada {
+    border: 3px solid #0B3C5D;
+    transform: scale(0.97);
+}
+
+.barra-seleccion {
+    position: sticky;
+    bottom: 0;
+    background: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+}
+
+#btn-solicitar {
+    padding: 10px 20px;
+    background-color: #0B3C5D;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#btn-solicitar:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.grid-fotos img {
+    border: 3px solid transparent;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.grid-fotos img.seleccionada {
+    border: 3px solid #0B3C5D;
+    transform: scale(0.96);
+}
+
+.barra-seleccion {
+    position: sticky;
+    bottom: 0;
+    background: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.08);
+}
+
+#btn-solicitar {
+    padding: 10px 20px;
+    background-color: #0B3C5D;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#btn-solicitar:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* cambiamos de tamaño las fotos para que se vean mejores*/
+
+.grid-fotos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 18px;
+    padding: 30px;
+}
+
+.grid-fotos img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+/* ponemos contador de fotos*/ 
+.barra-seleccion {
+    position: sticky;
+    bottom: 0;
+    background: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.08);
+    z-index: 10;
+}
+
+/* modal */
+ .modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+} 
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.cerrar {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Agregamos la parte de navegacion con teclado y para celular */ 
+
+#imagen-grande{
+transition: opacity 0.2s ease;
+max-width:90%;
+max-height:90%;
+}
+
+.nav-foto{
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+font-size:40px;
+background:rgba(0,0,0,0.4);
+color:white;
+border:none;
+cursor:pointer;
+padding:10px 15px;
+border-radius:8px;
+}
+
+#btn-anterior{
+left:20px;
+}
+
+#btn-siguiente{
+right:20px;
+}
+
+/*Agregamos Miniaturas*/ 
+ #miniaturas{
+
+display:flex;
+justify-content:center;
+gap:8px;
+
+position:absolute;
+bottom:20px;
+left:50%;
+transform:translateX(-50%);
+
+} 
+
+#miniaturas img{
+
+width:60px;
+height:60px;
+object-fit:cover;
+
+cursor:pointer;
+
+opacity:0.6;
+
+border-radius:6px;
+
+transition:0.2s;
+
+} 
+
+#miniaturas img:hover{
+
+opacity:1;
+transform:scale(1.1);
+
+}
+
+.mini-activa{
+
+opacity:1 !important;
+border:3px solid white;
+
+}
+
+/* BOTON FLOTANTE PARA LA SELECCION*/ 
+.barra-seleccion{
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+background:#111;
+color:white;
+padding:12px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+}
+/* a Chequear esto*/
+#preview-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #0b1320;
+  padding: 10px;
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  z-index: 999;
+}
+
+.preview-thumb {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 2px solid transparent;
+}
+
+.preview-thumb.selected {
+  border-color: #3b82f6;
+}
+/* Agregamos boton + para seleccionar las fotos*/
+
+.foto-item{
+
+position:relative;
+
+border-radius:12px;
+
+overflow:hidden;
+
+box-shadow:0 4px 14px rgba(0,0,0,0.15);
+
+transition:transform 0.25s ease, box-shadow 0.25s ease;
+
+}
+
+.foto-item img{
+
+width:100%;
+
+display:block;
+
+border-radius:10px;
+
+transition:transform 0.35s ease;
+
+}
+.foto-item:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 10px 22px rgba(0,0,0,0.2);
+
+}
+
+
+.btn-select{
+
+position:absolute;
+bottom:10px;
+right:10px;
+
+width:32px;
+height:32px;
+
+border-radius:50%;
+border:none;
+
+background:white;
+color:black;
+
+font-size:20px;
+font-weight:bold;
+
+cursor:pointer;
+
+box-shadow:0 2px 6px rgba(0,0,0,0.3);
+
+}
+.btn-select:hover{
+
+transform:scale(1.15);
+
+}
+
+.foto-item.activa .btn-select{
+
+background:#e63946;
+color:white;
+
+}
+/*Agregamos carrito de compras*/
+
+#carrito{
+
+position:fixed;
+bottom:20px;
+right:20px;
+
+background:black;
+color:white;
+
+padding:12px 18px;
+border-radius:25px;
+
+font-weight:bold;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+
+}
+
+#contador-badge{
+
+background:red;
+border-radius:50%;
+padding:4px 8px;
+margin-left:6px;
+
+}
+.foto-item.activa img{
+opacity:0.6;
+}
+#btn-seleccionar-zoom{
+
+position:absolute;
+bottom:25px;
+right:130px;
+
+width:45px;
+height:45px;
+
+border-radius:50%;
+
+font-size:22px;
+font-weight:bold;
+
+background:white;
+
+border:none;
+
+cursor:pointer;
+
+z-index:20;
+
+box-shadow:0 2px 8px rgba(0,0,0,0.3);
+
+transition:transform 0.15s;
+
+}
+
+#btn-seleccionar-zoom:hover{
+
+transform:scale(1.1);
+
+}
+
+#btn-seleccionar-zoom.seleccionada{
+
+background:red;
+color:white;
+
+}
+#carrito{
+
+position:fixed;
+
+bottom:25px;
+right:25px;
+
+background:#111;
+color:white;
+
+padding:14px 18px;
+
+border-radius:30px;
+
+font-size:16px;
+
+cursor:pointer;
+
+box-shadow:0 4px 15px rgba(0,0,0,0.3);
+
+z-index:9999;
+
+transition:transform 0.2s;
+
+}
+
+#carrito:hover{
+
+transform:scale(1.05);
+
+}
+
+#contador-badge{
+
+background:#ff3b3b;
+
+color:white;
+
+padding:4px 8px;
+
+border-radius:20px;
+
+margin-left:8px;
+
+font-weight:bold;
+
+}
+#btn-limpiar{
+
+position:fixed;
+
+bottom:25px;
+left: 50px;
+
+background:#ff4444;
+color:white;
+
+border:none;
+
+width:45px;
+height:45px;
+
+border-radius:50%;
+
+font-size:18px;
+
+cursor:pointer;
+
+box-shadow:0 4px 12px rgba(0,0,0,0.3);
+
+z-index:100;
+
+transition:transform 0.2s;
+
+}
+
+#btn-limpiar:hover{
+
+transform:scale(1.1);
+
+}
+
+/* BOTON PARA BORRAR SELECCION,NO BORRAR ESTA PERFECTO*/
+ .btn-delete{
+
+position:absolute;
+top: 840px;
+left:70px;
+
+background:#e74c3c;
+color:white;
+
+border:none;
+border-radius:50%;
+
+width:55px;
+height:55px;
+
+font-size:22px;
+
+cursor:pointer;
+display:flex;
+align-items:center;
+justify-content:center;
+
+z-index:10001;
+
+} 
+
+
+.fade-out{
+opacity:0;
+transition:opacity 0.25s ease;
+}
+
+.fade-in{
+opacity:1;
+transition:opacity 0.25s ease;
+}
+.btn-basura{
+background:#ff4444;
+color:white;
+border:none;
+padding:10px 14px;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+transition:0.2s;
+}
+
+.btn-basura:hover{
+background:#cc0000;
+transform:scale(1.05);
+}
+
+.contenedor-imagen{
+position:relative;
+display:inline-block;
+}
+
+.marca-agua{
+position:absolute;
+top:50%;
+left:50%;
+transform:translate(-50%,-50%) rotate(-25deg);
+
+font-size:40px;
+font-weight:bold;
+color:white;
+
+opacity:0.25;
+pointer-events:none;
+user-select:none;
+
+text-align:center;
+white-space:nowrap;
+}
+
+#imagen-grande{
+max-width:90vw;
+max-height:80vh;
+}
+/*BOTON FLOTANTE DE LA GALERIA,NO TOCAR ESTA PERFECTO*/ 
+.btn-basura-flotante{
+
+position:fixed;
+
+bottom:20px;
+left: 70px;
+
+background:#e74c3c;
+color:white;
+
+border:none;
+
+width:55px;
+height:55px;
+
+border-radius:50%;
+
+font-size:22px;
+
+cursor:pointer;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+box-shadow:0 4px 10px rgba(0,0,0,0.4);
+
+z-index:999;
+
+}
+.contenedor-fotos{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fill,minmax(120px,1fr));
+
+gap:15px;
+
+padding:20px;
+
+max-width:1100px;
+
+margin:auto;
+
+}
+#preview-fotos{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fill,minmax(140px,1fr));
+
+gap:20px;
+
+max-width:700px;
+
+margin:40px auto;
+
+}
+/* =========================
+   CARRITO MOBILE
+========================= */
+
+@media (max-width: 768px){
+
+#preview-fotos{
+
+grid-template-columns:repeat(2,1fr);
+
+gap:12px;
+
+padding:10px;
+
+}
+
+}
+
+.mini-preview{
+
+width:100%;
+
+height:120px;
+
+object-fit:cover;
+
+border-radius:12px;
+
+display:block;
+
+}
+@media (max-width: 768px){
+
+.mini-preview{
+
+height:100px;
+
+}
+
+}
+
+
+.item-carrito{
+
+position:relative;
+
+border-radius:12px;
+
+overflow:hidden;
+
+}
+@media (max-width: 768px){
+
+.acciones-carrito{
+
+display:flex;
+
+flex-direction:column;
+
+gap:10px;
+
+align-items:center;
+
+}
+
+.acciones-carrito button{
+
+width:90%;
+
+max-width:300px;
+
+}
+
+}
+.btn-eliminar-foto{
+
+position:absolute;
+
+bottom:5px;
+
+right:8px;
+
+width:16px;
+height:16px;
+
+border-radius:15%;
+
+background:#e63946;
+
+color:white;
+
+border:none;
+
+font-size:16px;
+
+cursor:pointer;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+box-shadow:0 3px 8px rgba(0,0,0,0.3);
+
+}
+@media (max-width: 768px){
+
+.btn-eliminar-foto{
+
+width:40px;
+height:40px;
+
+font-size:18px;
+
+}
+
+}
+
+
+#mensaje-descuento{
+
+background:#f1f3f5;
+
+padding:12px;
+
+border-radius:8px;
+
+text-align:center;
+
+font-weight:600;
+
+margin:20px auto;
+
+max-width:400px;
+
+}
+
+.foto-item{
+
+position:relative;
+
+}
+
+.foto-item img{
+
+width:100%;
+
+border-radius:6px;
+
+}
+
+
+#mensaje-descuento{
+
+padding:12px;
+
+border-radius:8px;
+
+text-align:center;
+
+font-weight:600;
+
+margin:20px auto;
+
+max-width:400px;
+
+}
+
+.descuento-faltante{
+
+background:#f1f3f5;
+
+}
+
+.descuento-activo{
+
+background:#d4edda;
+
+color:#155724;
+
+}
+
+.total{
+
+font-size:20px;
+
+font-weight:bold;
+
+}
+
+/* ===============================
+   LAYOUT CARRITO TIPO TIENDA
+================================ */
+
+.carrito-layout{
+
+display:grid;
+
+grid-template-columns:2fr 1fr;
+
+gap:40px;
+
+max-width:1200px;
+
+margin:40px auto;
+
+padding:20px;
+
+align-items:start;
+
+}
+.resumen{
+
+background:white;
+
+padding:25px;
+
+border-radius:12px;
+
+box-shadow:0 6px 20px rgba(0,0,0,0.08);
+
+position:sticky;
+
+top:20px;
+
+}
+@media (max-width:768px){
+
+.carrito-layout{
+
+grid-template-columns:1fr;
+
+}
+
+.resumen{
+
+position:relative;
+
+}
+
+}
+.hero-content{
+
+animation:fadeHero 1.2s ease;
+
+}
+
+@keyframes fadeHero{
+
+from{
+
+opacity:0;
+transform:translateY(20px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+.nosotros{
+
+padding:90px 20px;
+
+display:flex;
+
+justify-content:center;
+
+background:linear-gradient(180deg,#ffffff,#f5f5f5);
+
+}
+
+.hero-nosotros{
+
+height:90vh;
+
+background:url("assets/click-bg.png") center/cover no-repeat;
+
+position:relative;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+}
+
+/* Capa oscura encima de la imagen */
+.hero-overlay{
+
+width:100%;
+height:100%;
+
+background:rgba(11,60,93,0.65);
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+text-align:center;
+
+padding:20px;
+
+}
+.hero-nosotros::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background:rgba(255,255,255,0.2);
+
+}
+.titulo-nosotros{
+
+font-size:48px;
+
+font-weight:700;
+
+letter-spacing:4px;
+
+color:#0B3C5D;
+
+text-align:center;
+
+margin-bottom:40px;
+
+text-shadow:0 2px 10px rgba(0,0,0,0.15);
+
+}
+.titulo-nosotros::after{
+
+content:"";
+
+display:block;
+
+width:70px;
+
+height:3px;
+
+background:#0B3C5D;
+
+margin:15px auto 0;
+
+border-radius:2px;
+
+}
+
+.nosotros-card{
+
+max-width:720px;
+padding:50px;
+
+border-radius:20px;
+
+background:rgba(255,255,255,0.65);
+
+backdrop-filter:blur(8px);
+
+text-align:center;
+
+line-height:1.8;
+
+font-size:18px;
+
+color:#1c1c1c;
+
+}
+
+.nosotros-card p{
+
+margin-bottom:18px;
+
+font-weight:400;
+
+}
+.nosotros-container{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:60px;
+}
+@media (max-width:768px){
+
+.nosotros-card{
+padding:30px;
+font-size:16px;
+}
+
+.nosotros-container{
+
+flex-direction:column;
+
+text-align:center;
+
+gap:30px;
+
+}
+
+.titulo-nosotros{
+
+font-size:34px;
+
+margin-bottom:10px;
+
+}
+
+}
