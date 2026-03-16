@@ -26,7 +26,7 @@ const evento = "regatas-2026";
 const rutaThumbs = `../assets/eventos/${evento}/thumbs/`;
 const rutaFull = `../assets/eventos/${evento}/full/`;
 
-let totalFotos =152;
+let totalFotos =117;
 
 let fotoActual = 1;
 let zoom = 1;
