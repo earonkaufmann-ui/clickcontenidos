@@ -1,5 +1,5 @@
 
-const contenedor = document.getElementById("contenedor-fotos");
+/* const contenedor = document.getElementById("contenedor-fotos");
 const contador = document.getElementById("contador-badge");
 
 const modal = document.getElementById("modal");
